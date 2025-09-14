@@ -109,9 +109,7 @@ the settings of an account, click on the :guilabel:`Setup` button at the end of 
 
 The Chart of Accounts (CoA) is the structured list of all accounts used to record a company’s financial transactions in the General Ledger. It acts as the backbone of accounting, ensuring every transaction is classified consistently for reporting and compliance.
 
-Key Components of an Account
-
-Each account in Odoo is defined with several key fields:
+Key Components of an Account, Each account in Odoo is defined with several key fields:
 
 Field	Description
 Code	A unique identifier for the account. Often follows national/local accounting standards (e.g., 100000 for Assets).
