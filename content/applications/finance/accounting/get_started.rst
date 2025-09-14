@@ -107,72 +107,35 @@ the settings of an account, click on the :guilabel:`Setup` button at the end of 
    :doc:`Click here <get_started/chart_of_accounts>` for more information on how to configure your
    Chart of Accounts.
 
-The Chart of Accounts (CoA) is the structured list of all accounts used to record a company’s financial transactions in the General Ledger. It acts as the backbone of accounting, ensuring every transaction is classified consistently for reporting and compliance.
 
-Key Components of an Account, Each account in Odoo is defined with several key fields:
+The Chart of Accounts (CoA) is the complete list of all accounts your company uses to record transactions. Think of it as the financial map of your business: every invoice, payment, expense, or adjustment always links to one account.
+# Why It Matters
+Ensures your records are organized and consistent.
+Makes financial reports (like Balance Sheet and Profit & Loss) accurate and reliable.
+Helps accountants and managers speak the same language when analyzing results.
 
-Field	Description
-Code	A unique identifier for the account. Often follows national/local accounting standards (e.g., 100000 for Assets).
-Name	A descriptive label for the account, such as Bank, Receivables, Sales Revenue.
-Type	Determines the accounting behavior and reporting (Assets, Liabilities, Equity, Income, Expenses).
-Reconciliation	Indicates whether the account can be reconciled (important for accounts involving payments, receivables, and payables).
-Default Taxes	Sets default tax rules applied to transactions using this account.
-Tags	Analytical or reporting dimensions that help filter and group transactions across reports.
-Parent / Group	Accounts can belong to hierarchical groups, improving readability and reporting (e.g., grouping all Current Assets).
-Deprecated	Instead of deleting an account that has transactions, Odoo allows deprecating it, so it cannot be selected in the future but keeps historical data intact.
-Setting Up and Managing the CoA
+# What You’ll See in Odoo
+** When you open the CoA in Odoo (Accounting ‣ Configuration ‣ Chart of Accounts), each line represents one account. Important things you will notice:
+** Code → a short number to quickly identify the account (e.g., 101000 for Bank).
+** Name → the clear label you use day-to-day (e.g., Cash on Hand, Sales Revenue).
+** Type → defines where the account will appear in reports (Asset, Liability, Income, Expense).
+** Group → accounts are arranged in categories, so related items are together (all bank accounts, all sales accounts, etc.).
+** Deprecated → old accounts are kept for history but can be blocked from future use.
 
-Localization Packages
-When creating a new database or company, Odoo automatically installs the localization module of the selected country. This includes a standard chart of accounts, taxes, and fiscal positions that comply with local legislation.
+# How Odoo Makes It Easier
+Compared to many traditional systems, Odoo’s CoA is more flexible:
+You don’t need to know every accounting rule to start – Odoo installs a ready-made chart for your country when you create your company.
+You can add or rename accounts anytime, without breaking past data.
+If your business grows, you can reorganize accounts into groups or add tags to track things like projects, departments, or regions.
+One account can appear in different reports depending on how you tag or group it – giving more insights without creating dozens of extra accounts.
+Even in multi-company setups, each company can have its own chart, but consolidation across all companies is still possible.
 
-Creating Accounts
-Navigate to Accounting ‣ Configuration ‣ Chart of Accounts. Click Create and define the necessary fields such as Code, Name, and Type.
-
-Grouping Accounts
-Accounts can be grouped either manually or automatically using code prefixes. Groups improve readability in reports like the Trial Balance and Balance Sheet.
-
-Reconciliation Settings
-For accounts like Bank or Receivables, enable reconciliation to match transactions with invoices or payments.
-
-Deprecating Accounts
-Used accounts cannot be deleted. Instead, they can be marked as Deprecated to prevent new entries while maintaining historical consistency.
-
-Architecture of Accounts in Odoo
-
-Odoo implements accounts as database records under the model account.account.
-Some important fields in the model include:
-
-code → technical account code
-
-name → account name
-
-user_type_id → links to account.account.type, which drives reporting behavior
-
-reconcile → Boolean field enabling reconciliation
-
-deprecated → Boolean field for account deactivation
-
-group_id → relates the account to its group hierarchy
-
-This modular design makes the Chart of Accounts flexible (floating architecture):
-
-Accounts are not rigidly fixed to a single report but can be grouped, tagged, and mapped dynamically.
-
-Reports like Balance Sheet and P&L fetch accounts based on their type and grouping rules, not just hard-coded chart positions.
-
-This approach allows global compatibility with IFRS, GAAP, and local standards while giving companies room to adapt.
-
-Floating Nature of the CoA
-
-Unlike many traditional accounting systems where accounts are strictly tied to fixed reporting lines, Odoo’s CoA is floating:
-
-Accounts can be moved across groups without losing historical entries.
-
-A single account can contribute to multiple reporting views via tags and mapping rules.
-
-Multi-company setups allow each company to have its own CoA, while group consolidation can still be performed.
-
-This flexibility ensures that Odoo can adapt to diverse accounting standards and reporting frameworks without forcing companies to reimplement their entire chart.
+# Practical Tips for Users
+Start with the default chart that Odoo provides – it usually covers 80–90% of what you need.
+Only create new accounts when really necessary (e.g., a new type of expense or revenue you want to track).
+Use tags instead of creating too many accounts – it keeps the chart cleaner and reports more meaningful.
+Don’t delete accounts with past entries. If you no longer need one, just deprecate it.
+Review your CoA at least once a year with your accountant to keep it aligned with business and tax requirements.
 
 Invoicing onboarding banner
 ===========================
