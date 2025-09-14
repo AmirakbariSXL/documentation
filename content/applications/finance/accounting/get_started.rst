@@ -107,14 +107,13 @@ the settings of an account, click on the :guilabel:`Setup` button at the end of 
    :doc:`Click here <get_started/chart_of_accounts>` for more information on how to configure your
    Chart of Accounts.
 
-
 The Chart of Accounts (CoA) is the complete list of all accounts your company uses to record transactions. Think of it as the financial map of your business: every invoice, payment, expense, or adjustment always links to one account.
- Why It Matters
-Ensures your records are organized and consistent.
-Makes financial reports (like Balance Sheet and Profit & Loss) accurate and reliable.
-Helps accountants and managers speak the same language when analyzing results.
+Why It Matters
+ Ensures your records are organized and consistent.
+ Makes financial reports (like Balance Sheet and Profit & Loss) accurate and reliable.
+ Helps accountants and managers speak the same language when analyzing results.
 
- What You’ll See in Odoo
+What You’ll See in Odoo
  When you open the CoA in Odoo (Accounting ‣ Configuration ‣ Chart of Accounts), each line represents one account. Important things you will notice:
  Code → a short number to quickly identify the account (e.g., 101000 for Bank).
  Name → the clear label you use day-to-day (e.g., Cash on Hand, Sales Revenue).
@@ -122,20 +121,20 @@ Helps accountants and managers speak the same language when analyzing results.
  Group → accounts are arranged in categories, so related items are together (all bank accounts, all sales accounts, etc.).
  Deprecated → old accounts are kept for history but can be blocked from future use.
 
- How Odoo Makes It Easier
-Compared to many traditional systems, Odoo’s CoA is more flexible:
-You don’t need to know every accounting rule to start – Odoo installs a ready-made chart for your country when you create your company.
-You can add or rename accounts anytime, without breaking past data.
-If your business grows, you can reorganize accounts into groups or add tags to track things like projects, departments, or regions.
-One account can appear in different reports depending on how you tag or group it – giving more insights without creating dozens of extra accounts.
-Even in multi-company setups, each company can have its own chart, but consolidation across all companies is still possible.
+How Odoo Makes It Easier
+ Compared to many traditional systems, Odoo’s CoA is more flexible:
+ You don’t need to know every accounting rule to start – Odoo installs a ready-made chart for your country when you create your company.
+ You can add or rename accounts anytime, without breaking past data.
+ If your business grows, you can reorganize accounts into groups or add tags to track things like projects, departments, or regions.
+ One account can appear in different reports depending on how you tag or group it – giving more insights without creating dozens of extra accounts.
+ Even in multi-company setups, each company can have its own chart, but consolidation across all companies is still possible.
 
- Practical Tips for Users
-Start with the default chart that Odoo provides – it usually covers 80–90% of what you need.
-Only create new accounts when really necessary (e.g., a new type of expense or revenue you want to track).
-Use tags instead of creating too many accounts – it keeps the chart cleaner and reports more meaningful.
-Don’t delete accounts with past entries. If you no longer need one, just deprecate it.
-Review your CoA at least once a year with your accountant to keep it aligned with business and tax requirements.
+Practical Tips for Users
+ Start with the default chart that Odoo provides – it usually covers 80–90% of what you need.
+ Only create new accounts when really necessary (e.g., a new type of expense or revenue you want to track).
+ Use tags instead of creating too many accounts – it keeps the chart cleaner and reports more meaningful.
+ Don’t delete accounts with past entries. If you no longer need one, just deprecate it.
+ Review your CoA at least once a year with your accountant to keep it aligned with business and tax requirements.
 
 Invoicing onboarding banner
 ===========================
